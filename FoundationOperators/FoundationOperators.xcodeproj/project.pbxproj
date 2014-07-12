@@ -11,17 +11,31 @@
 		4049A94D19686DF70050C617 /* NSDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049A94C19686DF70050C617 /* NSDateComponents.swift */; };
 		5B2EDE1919681EC700A0C054 /* FoundationOperators.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2EDE1819681EC700A0C054 /* FoundationOperators.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B2EDE1F19681EC700A0C054 /* FoundationOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2EDE1319681EC700A0C054 /* FoundationOperators.framework */; };
-		5B2EDE2619681EC700A0C054 /* FoundationOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */; };
 		5B2EDE691968297C00A0C054 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE681968297C00A0C054 /* NSString.swift */; };
 		5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6A1968299C00A0C054 /* NSDate.swift */; };
 		5B2EDE6D196829A800A0C054 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6C196829A800A0C054 /* NSNumber.swift */; };
 		5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6F19682E0200A0C054 /* NSArray.swift */; };
 		F28FD37919683E4D005FA1A2 /* NSSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37819683E4D005FA1A2 /* NSSet.swift */; };
 		F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37A196858AB005FA1A2 /* NSDictionary.swift */; };
+		F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5B2EDE2019681EC700A0C054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B2EDE0A19681EC700A0C054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2EDE1219681EC700A0C054;
+			remoteInfo = FoundationOperators;
+		};
+		F2D2ECD01971E3A8008845BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B2EDE0A19681EC700A0C054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2EDE1219681EC700A0C054;
+			remoteInfo = FoundationOperators;
+		};
+		F2D2ECD21971E3A8008845BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5B2EDE0A19681EC700A0C054 /* Project object */;
 			proxyType = 1;
@@ -38,13 +52,13 @@
 		5B2EDE1819681EC700A0C054 /* FoundationOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationOperators.h; sourceTree = "<group>"; };
 		5B2EDE1E19681EC700A0C054 /* FoundationOperatorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationOperatorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2EDE2419681EC700A0C054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationOperatorsTests.swift; sourceTree = "<group>"; };
 		5B2EDE681968297C00A0C054 /* NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSString.swift; sourceTree = "<group>"; };
 		5B2EDE6A1968299C00A0C054 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		5B2EDE6C196829A800A0C054 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
 		5B2EDE6F19682E0200A0C054 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		F28FD37819683E4D005FA1A2 /* NSSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSet.swift; sourceTree = "<group>"; };
 		F28FD37A196858AB005FA1A2 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
+		F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringOperatorsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +126,8 @@
 		5B2EDE2219681EC700A0C054 /* FoundationOperatorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B2EDE2519681EC700A0C054 /* FoundationOperatorsTests.swift */,
 				5B2EDE2319681EC700A0C054 /* Supporting Files */,
+				F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */,
 			);
 			path = FoundationOperatorsTests;
 			sourceTree = "<group>";
@@ -170,6 +184,8 @@
 			);
 			dependencies = (
 				5B2EDE2119681EC700A0C054 /* PBXTargetDependency */,
+				F2D2ECD11971E3A8008845BA /* PBXTargetDependency */,
+				F2D2ECD31971E3A8008845BA /* PBXTargetDependency */,
 			);
 			name = FoundationOperatorsTests;
 			productName = FoundationOperatorsTests;
@@ -249,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2EDE2619681EC700A0C054 /* FoundationOperatorsTests.swift in Sources */,
+				F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +276,16 @@
 			isa = PBXTargetDependency;
 			target = 5B2EDE1219681EC700A0C054 /* FoundationOperators */;
 			targetProxy = 5B2EDE2019681EC700A0C054 /* PBXContainerItemProxy */;
+		};
+		F2D2ECD11971E3A8008845BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2EDE1219681EC700A0C054 /* FoundationOperators */;
+			targetProxy = F2D2ECD01971E3A8008845BA /* PBXContainerItemProxy */;
+		};
+		F2D2ECD31971E3A8008845BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2EDE1219681EC700A0C054 /* FoundationOperators */;
+			targetProxy = F2D2ECD21971E3A8008845BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

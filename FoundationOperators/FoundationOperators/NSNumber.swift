@@ -41,11 +41,23 @@ import Foundation
 }
 
 @prefix @assignment func ++ (inout operand: NSNumber) -> NSNumber {
-    operand = operand.doubleValue + 1.0
+    operand = operand + 1.0
     return operand
 }
 
+@postfix @assignment func ++ (inout operand: NSNumber) -> NSNumber {
+    var previousOperand = operand;
+    ++operand
+    return previousOperand
+}
+
 @prefix @assignment func -- (inout operand: NSNumber) -> NSNumber {
-    operand = operand.doubleValue - 1.0
+    operand = operand - 1.0
     return operand
+}
+
+@postfix @assignment func -- (inout operand: NSNumber) -> NSNumber {
+    var previousOperand = operand;
+    --operand
+    return previousOperand
 }

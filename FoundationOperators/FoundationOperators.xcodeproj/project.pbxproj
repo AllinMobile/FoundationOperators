@@ -15,6 +15,8 @@
 		5B2EDE6B1968299C00A0C054 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6A1968299C00A0C054 /* NSDate.swift */; };
 		5B2EDE6D196829A800A0C054 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6C196829A800A0C054 /* NSNumber.swift */; };
 		5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6F19682E0200A0C054 /* NSArray.swift */; };
+		757BB90B1974A0070095E192 /* NSNumberOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */; };
+		757BB90D1974A00D0095E192 /* NSDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BB90C1974A00D0095E192 /* NSDecimalNumber.swift */; };
 		F28FD37919683E4D005FA1A2 /* NSSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37819683E4D005FA1A2 /* NSSet.swift */; };
 		F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37A196858AB005FA1A2 /* NSDictionary.swift */; };
 		F2A15A441971FBDD00B5EC48 /* NSDateOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */; };
@@ -57,6 +59,8 @@
 		5B2EDE6A1968299C00A0C054 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		5B2EDE6C196829A800A0C054 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
 		5B2EDE6F19682E0200A0C054 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
+		757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberOperatorsTest.swift; sourceTree = "<group>"; };
+		757BB90C1974A00D0095E192 /* NSDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumber.swift; sourceTree = "<group>"; };
 		F28FD37819683E4D005FA1A2 /* NSSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSet.swift; sourceTree = "<group>"; };
 		F28FD37A196858AB005FA1A2 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
 		F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateOperatorsTest.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				4049A94C19686DF70050C617 /* NSDateComponents.swift */,
 				4049A94A196864200050C617 /* Int+DateComponentsConvertible.swift */,
 				5B2EDE6C196829A800A0C054 /* NSNumber.swift */,
+				757BB90C1974A00D0095E192 /* NSDecimalNumber.swift */,
 				5B2EDE6F19682E0200A0C054 /* NSArray.swift */,
 				5B2EDE1619681EC700A0C054 /* Supporting Files */,
 				F28FD37819683E4D005FA1A2 /* NSSet.swift */,
@@ -131,6 +136,7 @@
 				5B2EDE2319681EC700A0C054 /* Supporting Files */,
 				F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */,
 				F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */,
+				757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */,
 			);
 			path = FoundationOperatorsTests;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757BB90D1974A00D0095E192 /* NSDecimalNumber.swift in Sources */,
 				5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */,
 				F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */,
 				4049A94D19686DF70050C617 /* NSDateComponents.swift in Sources */,
@@ -270,6 +277,7 @@
 			files = (
 				F2A15A441971FBDD00B5EC48 /* NSDateOperatorsTest.swift in Sources */,
 				F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */,
+				757BB90B1974A0070095E192 /* NSNumberOperatorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

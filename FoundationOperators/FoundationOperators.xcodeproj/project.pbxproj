@@ -17,6 +17,7 @@
 		5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6F19682E0200A0C054 /* NSArray.swift */; };
 		F28FD37919683E4D005FA1A2 /* NSSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37819683E4D005FA1A2 /* NSSet.swift */; };
 		F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37A196858AB005FA1A2 /* NSDictionary.swift */; };
+		F2A15A441971FBDD00B5EC48 /* NSDateOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */; };
 		F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		5B2EDE6F19682E0200A0C054 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		F28FD37819683E4D005FA1A2 /* NSSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSet.swift; sourceTree = "<group>"; };
 		F28FD37A196858AB005FA1A2 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
+		F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateOperatorsTest.swift; sourceTree = "<group>"; };
 		F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringOperatorsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			children = (
 				5B2EDE2319681EC700A0C054 /* Supporting Files */,
 				F2D2ECD41971E3F5008845BA /* NSStringOperatorsTest.swift */,
+				F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */,
 			);
 			path = FoundationOperatorsTests;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A15A441971FBDD00B5EC48 /* NSDateOperatorsTest.swift in Sources */,
 				F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

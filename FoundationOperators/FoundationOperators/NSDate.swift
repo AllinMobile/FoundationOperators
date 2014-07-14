@@ -25,7 +25,7 @@ import Foundation
 }
 
 @infix func <(lhs: NSDate, rhs: NSDate) -> Bool {
-    return !(lhs > rhs)
+    return lhs.compare(rhs) == NSComparisonResult.OrderedAscending
 }
 
 @infix func -(lhs: NSDate, rhs:NSDate) -> NSTimeInterval {

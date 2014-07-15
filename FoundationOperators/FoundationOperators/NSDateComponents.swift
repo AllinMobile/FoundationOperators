@@ -16,26 +16,32 @@ import Foundation
         }
         return component
     }
+    
+    func sumOfComponentsOrUndefinedValue(componentOne: Int, componentTwo: Int) -> Int {
+        if(componentOne == NSUndefinedDateComponent && componentTwo == NSUndefinedDateComponent) {
+            return NSUndefinedDateComponent
+        }
+        return zeroIfNSUndefinedDateComponent(componentOne) + zeroIfNSUndefinedDateComponent(componentTwo)
+    }
 
     if (lhs.timeZone != rhs.timeZone) {
         return nil
     }
 
     let component = NSDateComponents()
-    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) + zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
-    component.era = zeroIfNSUndefinedDateComponent(lhs.era) + zeroIfNSUndefinedDateComponent(rhs.era)
-    component.year = zeroIfNSUndefinedDateComponent(lhs.year) + zeroIfNSUndefinedDateComponent(rhs.year)
-    component.month = zeroIfNSUndefinedDateComponent(lhs.month) + zeroIfNSUndefinedDateComponent(rhs.month)
-    component.day = zeroIfNSUndefinedDateComponent(lhs.day) + zeroIfNSUndefinedDateComponent(rhs.day)
-    component.hour = zeroIfNSUndefinedDateComponent(lhs.hour) + zeroIfNSUndefinedDateComponent(rhs.hour)
-    component.minute = zeroIfNSUndefinedDateComponent(lhs.minute) + zeroIfNSUndefinedDateComponent(rhs.minute)
-    component.second = zeroIfNSUndefinedDateComponent(lhs.second) + zeroIfNSUndefinedDateComponent(rhs.second)
-    component.weekday = zeroIfNSUndefinedDateComponent(lhs.weekday) + zeroIfNSUndefinedDateComponent(rhs.weekday)
-    component.weekdayOrdinal = zeroIfNSUndefinedDateComponent(lhs.weekdayOrdinal) + zeroIfNSUndefinedDateComponent(rhs.weekdayOrdinal)
-    component.quarter = zeroIfNSUndefinedDateComponent(lhs.quarter) + zeroIfNSUndefinedDateComponent(rhs.quarter)
-    component.weekOfMonth = zeroIfNSUndefinedDateComponent(lhs.weekOfMonth) + zeroIfNSUndefinedDateComponent(rhs.weekOfMonth)
-    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) + zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
-    component.yearForWeekOfYear = zeroIfNSUndefinedDateComponent(lhs.yearForWeekOfYear) + zeroIfNSUndefinedDateComponent(rhs.yearForWeekOfYear)
+    component.weekOfYear = sumOfComponentsOrUndefinedValue(lhs.weekOfYear, rhs.weekOfYear)
+    component.era = sumOfComponentsOrUndefinedValue(lhs.era, rhs.era)
+    component.year = sumOfComponentsOrUndefinedValue(lhs.year, rhs.year)
+    component.month = sumOfComponentsOrUndefinedValue(lhs.month, rhs.month)
+    component.day = sumOfComponentsOrUndefinedValue(lhs.day, rhs.day)
+    component.hour = sumOfComponentsOrUndefinedValue(lhs.hour, rhs.hour)
+    component.minute = sumOfComponentsOrUndefinedValue(lhs.minute, rhs.minute)
+    component.second = sumOfComponentsOrUndefinedValue(lhs.second, rhs.second)
+    component.weekday = sumOfComponentsOrUndefinedValue(lhs.weekday, rhs.weekday)
+    component.weekdayOrdinal = sumOfComponentsOrUndefinedValue(lhs.weekdayOrdinal, rhs.weekdayOrdinal)
+    component.quarter = sumOfComponentsOrUndefinedValue(lhs.quarter, rhs.quarter)
+    component.weekOfMonth = sumOfComponentsOrUndefinedValue(lhs.weekOfMonth, rhs.weekOfMonth)
+    component.yearForWeekOfYear = sumOfComponentsOrUndefinedValue(lhs.yearForWeekOfYear, rhs.yearForWeekOfYear)
     component.timeZone = lhs.timeZone
 
     return component
@@ -49,26 +55,32 @@ import Foundation
         }
         return component
     }
+    
+    func differenceOfComponentsOrUndefinedValue(componentOne: Int, componentTwo: Int) -> Int {
+        if(componentOne == NSUndefinedDateComponent && componentTwo == NSUndefinedDateComponent) {
+            return NSUndefinedDateComponent
+        }
+        return zeroIfNSUndefinedDateComponent(componentOne) - zeroIfNSUndefinedDateComponent(componentTwo)
+    }
 
     if (lhs.timeZone != rhs.timeZone) {
         return nil
     }
 
     let component = NSDateComponents()
-    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) - zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
-    component.era = zeroIfNSUndefinedDateComponent(lhs.era) - zeroIfNSUndefinedDateComponent(rhs.era)
-    component.year = zeroIfNSUndefinedDateComponent(lhs.year) - zeroIfNSUndefinedDateComponent(rhs.year)
-    component.month = zeroIfNSUndefinedDateComponent(lhs.month) - zeroIfNSUndefinedDateComponent(rhs.month)
-    component.day = zeroIfNSUndefinedDateComponent(lhs.day) - zeroIfNSUndefinedDateComponent(rhs.day)
-    component.hour = zeroIfNSUndefinedDateComponent(lhs.hour) - zeroIfNSUndefinedDateComponent(rhs.hour)
-    component.minute = zeroIfNSUndefinedDateComponent(lhs.minute) - zeroIfNSUndefinedDateComponent(rhs.minute)
-    component.second = zeroIfNSUndefinedDateComponent(lhs.second) - zeroIfNSUndefinedDateComponent(rhs.second)
-    component.weekday = zeroIfNSUndefinedDateComponent(lhs.weekday) - zeroIfNSUndefinedDateComponent(rhs.weekday)
-    component.weekdayOrdinal = zeroIfNSUndefinedDateComponent(lhs.weekdayOrdinal) - zeroIfNSUndefinedDateComponent(rhs.weekdayOrdinal)
-    component.quarter = zeroIfNSUndefinedDateComponent(lhs.quarter) - zeroIfNSUndefinedDateComponent(rhs.quarter)
-    component.weekOfMonth = zeroIfNSUndefinedDateComponent(lhs.weekOfMonth) - zeroIfNSUndefinedDateComponent(rhs.weekOfMonth)
-    component.weekOfYear = zeroIfNSUndefinedDateComponent(lhs.weekOfYear) - zeroIfNSUndefinedDateComponent(rhs.weekOfYear)
-    component.yearForWeekOfYear = zeroIfNSUndefinedDateComponent(lhs.yearForWeekOfYear) - zeroIfNSUndefinedDateComponent(rhs.yearForWeekOfYear)
+    component.weekOfYear = differenceOfComponentsOrUndefinedValue(lhs.weekOfYear, rhs.weekOfYear)
+    component.era = differenceOfComponentsOrUndefinedValue(lhs.era, rhs.era)
+    component.year = differenceOfComponentsOrUndefinedValue(lhs.year, rhs.year)
+    component.month = differenceOfComponentsOrUndefinedValue(lhs.month, rhs.month)
+    component.day = differenceOfComponentsOrUndefinedValue(lhs.day, rhs.day)
+    component.hour = differenceOfComponentsOrUndefinedValue(lhs.hour, rhs.hour)
+    component.minute = differenceOfComponentsOrUndefinedValue(lhs.minute, rhs.minute)
+    component.second = differenceOfComponentsOrUndefinedValue(lhs.second, rhs.second)
+    component.weekday = differenceOfComponentsOrUndefinedValue(lhs.weekday, rhs.weekday)
+    component.weekdayOrdinal = differenceOfComponentsOrUndefinedValue(lhs.weekdayOrdinal, rhs.weekdayOrdinal)
+    component.quarter = differenceOfComponentsOrUndefinedValue(lhs.quarter, rhs.quarter)
+    component.weekOfMonth = differenceOfComponentsOrUndefinedValue(lhs.weekOfMonth, rhs.weekOfMonth)
+    component.yearForWeekOfYear = differenceOfComponentsOrUndefinedValue(lhs.yearForWeekOfYear, rhs.yearForWeekOfYear)
     component.timeZone = lhs.timeZone
 
     return component

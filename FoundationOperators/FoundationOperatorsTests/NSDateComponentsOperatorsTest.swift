@@ -27,6 +27,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentOne.weekOfMonth = 112
         componentOne.weekOfYear = 122
         componentOne.yearForWeekOfYear = 132
+        componentOne.nanosecond = 142
         componentOne.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         let componentTwo = NSDateComponents()
@@ -43,6 +44,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentTwo.weekOfMonth = 117
         componentTwo.weekOfYear = 127
         componentTwo.yearForWeekOfYear = 137
+        componentTwo.nanosecond = 147
         componentTwo.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         let componentsSum = NSDateComponents()
@@ -59,6 +61,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentsSum.weekOfMonth = 229
         componentsSum.weekOfYear = 249
         componentsSum.yearForWeekOfYear = 269
+        componentsSum.nanosecond = 289
         componentsSum.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         XCTAssertEqualObjects(componentOne + componentTwo, componentsSum)
@@ -115,6 +118,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentOne.weekOfMonth = 200
         componentOne.weekOfYear = 122
         componentOne.yearForWeekOfYear = 1111
+        componentOne.nanosecond = -100
         componentOne.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         let componentTwo = NSDateComponents()
@@ -131,6 +135,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentTwo.weekOfMonth = 100
         componentTwo.weekOfYear = 110
         componentTwo.yearForWeekOfYear = 1000
+        componentTwo.nanosecond = 10
         componentTwo.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         let componentsDifference = NSDateComponents()
@@ -147,6 +152,7 @@ class NSDateComponentsOperatorsTest: XCTestCase {
         componentsDifference.weekOfMonth = 100
         componentsDifference.weekOfYear = 12
         componentsDifference.yearForWeekOfYear = 111
+        componentsDifference.nanosecond = -110
         componentsDifference.timeZone = NSTimeZone(forSecondsFromGMT: 60*60)
         
         XCTAssertEqualObjects(componentOne - componentTwo, componentsDifference)

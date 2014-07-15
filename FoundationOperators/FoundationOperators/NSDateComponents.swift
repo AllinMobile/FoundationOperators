@@ -43,6 +43,7 @@ import Foundation
     component.weekOfMonth = sumOfComponentsOrUndefinedValue(lhs.weekOfMonth, rhs.weekOfMonth)
     component.yearForWeekOfYear = sumOfComponentsOrUndefinedValue(lhs.yearForWeekOfYear, rhs.yearForWeekOfYear)
     component.timeZone = lhs.timeZone
+    component.nanosecond = sumOfComponentsOrUndefinedValue(lhs.nanosecond, rhs.nanosecond)
 
     return component
 }
@@ -81,6 +82,7 @@ import Foundation
     component.quarter = differenceOfComponentsOrUndefinedValue(lhs.quarter, rhs.quarter)
     component.weekOfMonth = differenceOfComponentsOrUndefinedValue(lhs.weekOfMonth, rhs.weekOfMonth)
     component.yearForWeekOfYear = differenceOfComponentsOrUndefinedValue(lhs.yearForWeekOfYear, rhs.yearForWeekOfYear)
+    component.nanosecond = differenceOfComponentsOrUndefinedValue(lhs.nanosecond, rhs.nanosecond)
     component.timeZone = lhs.timeZone
 
     return component

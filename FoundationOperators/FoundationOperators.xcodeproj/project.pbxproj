@@ -17,6 +17,7 @@
 		5B2EDE7019682E0200A0C054 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EDE6F19682E0200A0C054 /* NSArray.swift */; };
 		757BB90B1974A0070095E192 /* NSNumberOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */; };
 		757BB90D1974A00D0095E192 /* NSDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BB90C1974A00D0095E192 /* NSDecimalNumber.swift */; };
+		F20F60F11975ECE500DF5428 /* IntDateComponentsConvertibleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F60F01975ECE500DF5428 /* IntDateComponentsConvertibleExtensionTest.swift */; };
 		F22EAC2E19734EAC00F599CC /* NSDateComponentsOperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EAC2D19734EAC00F599CC /* NSDateComponentsOperatorsTest.swift */; };
 		F28FD37919683E4D005FA1A2 /* NSSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37819683E4D005FA1A2 /* NSSet.swift */; };
 		F28FD37B196858AB005FA1A2 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FD37A196858AB005FA1A2 /* NSDictionary.swift */; };
@@ -62,6 +63,7 @@
 		5B2EDE6F19682E0200A0C054 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberOperatorsTest.swift; sourceTree = "<group>"; };
 		757BB90C1974A00D0095E192 /* NSDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumber.swift; sourceTree = "<group>"; };
+		F20F60F01975ECE500DF5428 /* IntDateComponentsConvertibleExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntDateComponentsConvertibleExtensionTest.swift; sourceTree = "<group>"; };
 		F22EAC2D19734EAC00F599CC /* NSDateComponentsOperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateComponentsOperatorsTest.swift; sourceTree = "<group>"; };
 		F28FD37819683E4D005FA1A2 /* NSSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSSet.swift; sourceTree = "<group>"; };
 		F28FD37A196858AB005FA1A2 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				F2A15A431971FBDD00B5EC48 /* NSDateOperatorsTest.swift */,
 				757BB90A1974A0070095E192 /* NSNumberOperatorsTest.swift */,
 				F22EAC2D19734EAC00F599CC /* NSDateComponentsOperatorsTest.swift */,
+				F20F60F01975ECE500DF5428 /* IntDateComponentsConvertibleExtensionTest.swift */,
 			);
 			path = FoundationOperatorsTests;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22EAC2E19734EAC00F599CC /* NSDateComponentsOperatorsTest.swift in Sources */,
+				F20F60F11975ECE500DF5428 /* IntDateComponentsConvertibleExtensionTest.swift in Sources */,
 				F2A15A441971FBDD00B5EC48 /* NSDateOperatorsTest.swift in Sources */,
 				F2D2ECD51971E3F5008845BA /* NSStringOperatorsTest.swift in Sources */,
 				757BB90B1974A0070095E192 /* NSNumberOperatorsTest.swift in Sources */,
